@@ -1,0 +1,12 @@
+#Spring Configuration
+spring:
+  application:
+    name: servicio.colores
+#HTTP Server
+server:
+  port: 8084
+# Discovery server Access
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
