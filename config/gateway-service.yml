@@ -2,9 +2,6 @@
 spring:
   application:
     name: servicio.gatewau
-  cloud:
-    config:
-      enabled: false
 #HTTP Server
 server:
   port: 8080
