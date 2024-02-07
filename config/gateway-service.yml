@@ -1,6 +1,10 @@
+#Spring Configuration
+spring:
+  application:
+    name: servicio.gateway
 #HTTP Server
 server:
-  port: 8080
+  port: 8083
 # Discovery server Access
 eureka:
   client:
