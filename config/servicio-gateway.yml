@@ -1,23 +1,23 @@
-#Spring Configuration
 spring:
   application:
     name: servicio.gateway
-#HTTP Server
+
 server:
   port: 8083
-# Discovery server Access
+
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka
+
 spring:
- cloud:
-  gateway:
-   discovery:
-    localtor: 
-     enable: true
-    routes:
-     - id:
-      uri: lb://product-application
-      predicates: 
-       - Path=/api/v0/productos
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: product-service
+          uri: lb://product-application
+          predicates:
+            - Path=/api/v0/productos
