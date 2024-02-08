@@ -1,10 +1,10 @@
 #Spring Configuration
 spring:
   application:
-    name: servicio.colores
+    name: colores
 #HTTP Server
 server:
-  port: 8084
+  port: 9094
 # Discovery server Access
 eureka:
   client:
