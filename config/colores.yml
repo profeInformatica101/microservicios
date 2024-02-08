@@ -1,12 +1,2 @@
-#Spring Configuration
-spring:
-  application:
-    name: colores
-#HTTP Server
 server:
-  port: 9094
-# Discovery server Access
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:8761/eureka
+    port: ${PORT:8889}
