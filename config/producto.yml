@@ -8,6 +8,6 @@ eureka:
       
 spring:
   application:
-    name: servicio.producto
+    name: producto
 
 
