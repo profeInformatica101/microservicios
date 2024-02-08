@@ -1,17 +1,13 @@
-#Spring Configuration
-spring:
-  application:
-    name: servicio.producto
-  cloud:
-    config:
-      enabled: false
-#HTTP Server
 server:
-  port: 9093
-# Discovery server Access
+  port: 9090
+
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka
       
+spring:
+  application:
+    name: servicio.producto
+
 
