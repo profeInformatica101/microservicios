@@ -8,15 +8,15 @@ eureka:
 
 spring:
   application:
-    name: servicio.gateway
+    name: gateway
   cloud:
     gateway:
       discovery:
         locator:
           enabled: true
       routes:
-        - id: product-service
-          uri: lb://SERVICIO.PRODUCTO
+        - id: producto
+          uri: lb://producto
           predicates:
             - Path=/api/v0/productos/**
         
