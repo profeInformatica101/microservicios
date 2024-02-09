@@ -1,1 +1,5 @@
 global-message: ♖ ♘ ♗ ♕ ♔ ♗ ♘ ♖ ♙ ♙ ♙ ♙ ♙ ♙ ♙ ♙ El servidor de configuración está en juego y funcionando correctamente! ♟ ♟ ♟ ♟ ♟ ♟ ♟ ♟ ♜ ♞ ♝ ♛ ♚ ♝ ♞ ♜
+logging:
+  level:
+    org.springframework.cloud.gateway: DEBUG
+    org.springframework.web.reactive.function.client.ExchangeFunctions: DEBUG
