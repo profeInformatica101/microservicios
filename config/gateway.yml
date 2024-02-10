@@ -16,7 +16,7 @@ spring:
           enabled: true
       routes:
         - id: producto
-          uri: lb://producto
+          uri: http://localhost:9013/
           predicates:
             - Path=/api/v0/productos/**
         
