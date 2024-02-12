@@ -32,14 +32,4 @@ spring:
           predicates:
             - Path=/api/v0/auth/**
         
-        # Ruta específica para signin
-        - id: auth-signin
-          uri: lb://autorizacion
-          predicates:
-            - Path=/api/v0/auth/signin
-        
-        # Ruta específica para signup
-        - id: auth-signup
-          uri: lb://autorizacion
-          predicates:
-            - Path=/api/v0/auth/signup
+
