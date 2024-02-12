@@ -3,4 +3,4 @@ server:
 
 spring:
   application:
-    name: servicio.autorizacion
+    name: servicio-autorizacion
