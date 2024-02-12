@@ -1,5 +1,11 @@
 global-message: ♖ ♘ ♗ ♕ ♔ ♗ ♘ ♖ ♙ ♙ ♙ ♙ ♙ ♙ ♙ ♙ El servidor de configuración está en juego y funcionando correctamente! ♟ ♟ ♟ ♟ ♟ ♟ ♟ ♟ ♜ ♞ ♝ ♛ ♚ ♝ ♞ ♜
 
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+      
+
 management:
   endpoints:
     web:
