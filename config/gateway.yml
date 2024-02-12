@@ -27,8 +27,8 @@ spring:
             - Path=/api/v0/carrito/**
          
         # Ruta para el servicio de autorización
-        - id: auth-service
-          uri: lb://autorizacion
+        - id: servicio-autorizacion
+          uri: lb://servicio-autorizacion
           predicates:
             - Path=/api/v0/auth/**
         
