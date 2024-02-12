@@ -15,11 +15,17 @@ spring:
         locator:
           enabled: true
       routes:
+       # Ruta para el servicio de producto
         - id: producto
           uri: http://localhost:9013/
           predicates:
             - Path=/api/v0/productos/**
-        
+         # Ruta para el servicio de producto
+        - id: carro
+          uri: http://localhost:9016/
+          predicates:
+            - Path=/api/v0/carrito/**
+         
         # Ruta para el servicio de autorización
         - id: auth-service
           uri: lb://autorizacion
