@@ -17,12 +17,12 @@ spring:
       routes:
        # Ruta para el servicio de producto
         - id: producto
-          uri: http://localhost:9013/
+          uri: lb://producto
           predicates:
             - Path=/api/v0/productos/**
          # Ruta para el servicio de producto
         - id: carro
-          uri: http://localhost:9016/
+          uri: lb://carro
           predicates:
             - Path=/api/v0/carrito/**
          
