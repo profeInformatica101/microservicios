@@ -1,5 +1,8 @@
-global-message: ♖ ♘ ♗ ♕ ♔ ♗ ♘ ♖ ♙ ♙ ♙ ♙ ♙ ♙ ♙ ♙ El servidor de configuración funcionando correctamente ♟ ♟ ♟ ♟ ♟ ♟ ♟ ♟ ♜ ♞ ♝ ♛ ♚ ♝ ♞ ♜
-
+server:  
+  port: 8887
+spring:
+  application:
+    name: config-server
 eureka:
   client:
     service-url:
@@ -15,5 +18,7 @@ management:
 
 logging:
   level:
-    org.springframework.cloud.gateway: DEBUG
-    org.springframework.web.reactive.function.client.ExchangeFunctions: DEBUG
+   org.springframework.cloud: DEBUG
+    
+global-message: ♖ ♘ ♗ ♕ ♔ ♗ ♘ ♖ ♙ ♙ ♙ ♙ ♙ ♙ ♙ ♙ El servidor de configuración funcionando correctamente ♟ ♟ ♟ ♟ ♟ ♟ ♟ ♟ ♜ ♞ ♝ ♛ ♚ ♝ ♞ ♜
+
