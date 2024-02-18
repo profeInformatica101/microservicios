@@ -31,5 +31,11 @@ spring:
           uri: lb://servicio-autorizacion
           predicates:
             - Path=/api/v0/auth/**
+
+       # Ruta para el servicio de usuarios
+        - id: usuario-servicio
+          uri: lb://usuario-servicio
+          predicates:
+            - Path=/api/v0/usuarios/**
         
 
