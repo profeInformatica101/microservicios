@@ -16,8 +16,8 @@ spring:
           enabled: true
       routes:
        # Ruta para el servicio de producto
-        - id: producto
-          uri: lb://producto
+        - id: servicio-producto
+          uri: lb://servicio-producto
           predicates:
             - Path=/api/v0/productos/**
          # Ruta para el servicio de producto
